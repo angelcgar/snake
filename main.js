@@ -2,14 +2,16 @@ import "./style.css";
 import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
-<div id="board"></div>
-<div class="boardInfo">
+<div clas="aling">
+  <div id="board"></div>
+  <div class="boardInfo">
     <div>
-        Score: <div id="scoreBoard"></div>
+    Score: <div id="scoreBoard"></div>
     </div>
     <button id="start">Start</button>
-</div>
-<div id="gameOver">Game Over</div>
+  </div>
+  <div id="gameOver">Game Over</div>
+</div
 `;
 
 // HTML Elements
@@ -17,6 +19,7 @@ const board = document.getElementById("board");
 const scoreBoard = document.getElementById("scoreBoard");
 const startButton = document.getElementById("start");
 const gameOverSign = document.getElementById("gameOver");
+const aling = document.getElementsByClassName("aling");
 
 // Game settings
 const boardSize = 10;

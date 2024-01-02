@@ -11,6 +11,19 @@
   font-family: "Share Tech Mono", monospace;
 }
 
+/* Aling to center of screen the element .aling */
+.aling {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 1067px;
+  height: auto;
+  margin: 50px;
+}
+
 #board,
 .boardInfo {
   max-width: 500px;
@@ -19,6 +32,10 @@
 #board {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  padding: 60px;
+  width: 1067px;
+  height: auto;
+  margin: 100px 100px 0px 100px;
 }
 
 #start,
